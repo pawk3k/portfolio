@@ -1,0 +1,18 @@
+.templ{
+    background: #61dafb;
+}
+.img_of_project{
+    width: 20vw;
+    height: 30vh ;
+    background: white;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background: lime;
+}
+.templ:hover{
+    box-shadow: 8px 8px 9px #61dafb;
+}

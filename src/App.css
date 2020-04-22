@@ -1,7 +1,8 @@
 .App {
   text-align: center;
-
-  background-image: repeating-radial-gradient(circle, #472987 , #7f3e69);
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*background-image: url("retro-4237850_1920.jpg");*/
 }
 
 .App-logo {

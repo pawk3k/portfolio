@@ -1,8 +1,28 @@
 #shadow{
-    width: 250px;
-    height: 250px;
+    background-image: url("retro-4237850_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Monoton", sans-serif;
+    font-style: italic;
+    font-size: 15vh;
+    color: #61dafb;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.neon-text{
+    cursor: default;
+    text-shadow: 0.5vh 0.5vh purple;
+}
+.neon-text:hover{
+    text-shadow: 0.5vh 0.5vh 1vh #61dafb;
 }
 .round{
     border-radius: 25px;
+}
+.css-selector {
+    font-family: 'Font Name', serif;
+}
+
+@font-face {
+    font-family: 'neon-font';
+    src: local('neon-font'), url("./NEON.TTF") format("truetype");
 }

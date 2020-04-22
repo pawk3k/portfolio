@@ -6,12 +6,10 @@ const SingleProjectTemplate = () =>{
         set(!rounded);
     };
   return(
-      <div id="shadow" onMouseEnter={mouseE} onMouseLeave={mouseE} style={{width:"70vw",height:"70vh"}}>
-          <div>
-              <button className={ rounded ?  "round" : ""} style={{background:"green",border:"none"}}>Click Me!</button>
-              <button className={ rounded ?  "round" : ""}>Click Me!</button>
+      <div id="shadow" onMouseEnter={mouseE} onMouseLeave={mouseE} style={{display:"flex",alignItems:"center" ,justifyContent :"center", width:"100vw",height:"100vh"}}>
+          <div className="neon-text">
+              Portfolio
           </div>
-          Kek
       </div>
   )
 };
