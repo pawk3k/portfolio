@@ -1,15 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SingleProjectTemplate from "./Components/SingleProjectTemplate";
-import ProjectsPage from "./Components/SecondPage/ProjectsPage";
+import SingleProjectTemplate from "./Components/FirstPage/SingleProjectTemplate";
+import SecondPage from "./Components/SecondPage/SecondPage";
+import ThirdPage from "./Components/ThirdPage/ThirdPage";
+import Contact from "./Components/ThirdPage/Contact/Contact";
 function App() {
   return (
     <div className="App" style={{justifyContent:"center",display:"flex", width:"100vw",height:"100vh",flexWrap:"wrap"}}>
-    <SingleProjectTemplate />
-    <ProjectsPage/>
-    {/*<SingleProjectTemplate/>*/}
-
+      <SingleProjectTemplate />
+      <SecondPage/>
+      <ThirdPage/>
     </div>
   );
 }

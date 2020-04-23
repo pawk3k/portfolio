@@ -1,18 +1,44 @@
-.templ{
-    background: #61dafb;
+.template {
+  /*background: white;*/
+  box-shadow: 1vh 1vh #472987;
+  border-radius: 30px;
 }
-.img_of_project{
-    width: 20vw;
-    height: 30vh ;
-    background: white;
+
+.img_of_project {
+  border-radius: 30px 30px 0 0;
+  width: 20vw;
+  height: 30vh;
+  background: white;
 }
-.links{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 10vh;
-    background: lime;
+
+.links {
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  background: #8e42ff;
 }
-.templ:hover{
-    box-shadow: 8px 8px 9px #61dafb;
+
+.template:hover {
+  box-shadow: 8px 8px 9px #61dafb;
 }
+
+.btn-class {
+  font-family: Orbitron, sans-serif;
+  border-radius: 30px;
+  box-shadow: 0 1vh 1vh #ff00ff;
+  width: 6vw;
+  height: 6vh;
+}
+
+.btn-class:active {
+  transform: translateY(1vh);
+  box-shadow: 0 0.5vh gray;
+}
+
+.btn-class:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=st.css.map */

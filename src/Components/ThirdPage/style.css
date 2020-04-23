@@ -1,0 +1,37 @@
+.main {
+  font-family: Share Tech Mono, sans-serif;
+  background-color: #472987;
+  height: 135vh;
+  width: 100vw;
+}
+
+.App-logo {
+  animation: infinite 3s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  to {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+.container {
+  margin-top: 0;
+  background: #472987;
+}
+
+.border {
+  border-style: dashed;
+  border-color: magenta;
+}
+
+.row {
+  background-image: linear-gradient(to right, #472987, blue);
+  box-shadow: 0 1vh 1vh cyan;
+}
+
+/*# sourceMappingURL=style.css.map */

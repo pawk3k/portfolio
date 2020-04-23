@@ -21,8 +21,3 @@
 .css-selector {
     font-family: 'Font Name', serif;
 }
-
-@font-face {
-    font-family: 'neon-font';
-    src: local('neon-font'), url("./NEON.TTF") format("truetype");
-}
