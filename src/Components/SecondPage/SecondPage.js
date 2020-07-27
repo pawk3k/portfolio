@@ -8,7 +8,7 @@ const SecondPage = () =>{
           <div className="row_templates">
               <ProjectTemplate image={"pokedex.jpg"} linkGH={"https://github.com/pawk3k/pokedex"} linkLive={"https://portfolio-393d4.web.app"}/>
               <ProjectTemplate image={"nefritis.jpg"} linkGH={"https://github.com/pawk3k/oksana"} linkLive={"https://nefritis2.firebaseapp.com/"}/>
-              <ProjectTemplate image={"flask.jpg"} linkGH={"https://github.com/pawk3k/app_flask1"} linkLive={"https://portfolio-393d4.web.app"}/>
+              <ProjectTemplate image={"flask.jpg"} linkGH={"https://github.com/pawk3k/app_flask1"} linkLive={undefined}/>
           </div>
 
       </div>

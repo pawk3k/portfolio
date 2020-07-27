@@ -15,11 +15,13 @@ const ProjectTemplate = (props) =>{
                       code
                   </button>
               </a>
+              {(props.linkLive != undefined) && 
               <a href={props.linkLive}>
                   <button className="btn-class">
                       live
                   </button>
-              </a>
+              </a>}
+
           </div>
           
 

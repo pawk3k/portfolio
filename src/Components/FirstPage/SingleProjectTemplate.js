@@ -19,7 +19,7 @@ const SingleProjectTemplate = () =>{
 
       <div id="shadow" onMouseEnter={mouseE} onMouseLeave={mouseE} style={{display:"flex",alignItems:"center" ,justifyContent :"center", width:"100vw",height:"100vh"}}>
           <div className="neon-text">
-              <Typist cursor={cursor1}>Portfolio</Typist>
+              <Typist cursor={cursor1}>Portfolios</Typist>
          </div>
       </div>
       
