@@ -3,6 +3,7 @@ import "./style.css"
 import Skill from "./Skill/Skill";
 import Contact from "./Contact/Contact";
 const ThirdPage =() =>{
+    
     return(
         <div className="main">
             <div className="container">
