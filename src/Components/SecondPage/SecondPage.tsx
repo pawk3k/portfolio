@@ -1,5 +1,6 @@
 import React from "react";
 
+import TextField from '@material-ui/core/TextField';
 import {useEffect,useRef} from "react";
 import "./styles.scss";
 import gsap from 'gsap';
@@ -22,7 +23,7 @@ const SecondPage = () =>{
         //   [...header.children].map(child => {
             gsap.from(header, {
               autoAlpha: 0,
-              x: '-=30',
+              x: '+=30',
               rotation:"360",
               scrollTrigger: {
                 trigger: header,

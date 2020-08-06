@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   height: 100%;
   /*display: flex;*/
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 .projects-text {
   color: #472987;
   text-shadow: 1vh 1vh #61dafb;
-  font-size: 20vh;
+  /* font-size: 5vw; */
   font-family: Orbitron, sans-serif;
 }
 
