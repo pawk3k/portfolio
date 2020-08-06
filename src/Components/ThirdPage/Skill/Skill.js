@@ -1,18 +1,28 @@
 import React, { useRef,useEffect } from "react";
 import { TweenMax } from "gsap";
+import gsap from "gsap";
 // import gsap from "gsap";
 const Skill = (props) =>{
     const skill_ref = useRef(null);
 
     useEffect(() => {
         // if(skill_ref){
-    TweenMax.fromTo(
-      [skill_ref.current],
-      0.5,
-      { x: -180 },
-      { x: 0 }
-    );
+    // TweenMax.fromTo(
+    //   [skill_ref.current],
+    //   0.5,
+    //   { x: -180 },
+    //   { x: 0 }
+    // );
+
+    gsap.from(skill_ref.current, {
+        autoAlpha: 0,
+        x: '-=500',
+        scrollTrigger: {
+          trigger: skill_ref.current,
+          start: 'top bottom-=50px',
+        },
         // } 
+    })
     },[]);
         
 
