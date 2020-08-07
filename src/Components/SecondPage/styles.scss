@@ -13,7 +13,6 @@
 .row_templates{
     display: flex;
     width: 100%;
-
     justify-content: space-around;
     flex-direction: row;
 }
@@ -22,4 +21,36 @@
     text-shadow: 1vh 1vh #61dafb;
     font-size: 10vh;
     font-family: Orbitron,sans-serif;
+}
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.longhand { 
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+  
+}
+
+.flex-item {
+//   background: tomato;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
 }

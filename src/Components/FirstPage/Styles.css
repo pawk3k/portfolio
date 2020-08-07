@@ -5,8 +5,8 @@
     font-family: "Monoton", sans-serif;
     font-style: italic;
     font-size: 12vw;
-
-    width: 1vh ;
+    height: auto;
+    max-width: 100%;
     color: #61dafb;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -6,7 +6,7 @@ const ProjectTemplate = (props) =>{
 
       <div className="template">
           <div className="img_of_project" >
-              <img src={require("./" + props.image)} style={{objectFit:"contain",width:"90%",height:"90%"}}/>;
+              <img src={require("./" + props.image)} style={{objectFit:"contain",width:"90%",height:"90%"}}/>
           </div>
 
           <div className="links">
