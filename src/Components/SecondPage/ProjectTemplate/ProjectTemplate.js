@@ -1,5 +1,5 @@
 import React from "react";
-import "./st.scss"
+import "./st.css"
 const ProjectTemplate = (props) =>{
   return (
 
