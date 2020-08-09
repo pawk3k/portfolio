@@ -10,9 +10,9 @@ interface Props {
 
 const Description = ({ title, description, technologies }: Props) => {
   return (
-    <div>
-      <h1>{title}</h1>
-      <h2>{description}</h2>
+    <div className="font_change">
+      <h1 className="font_change">{title}</h1>
+      {/* <h2 className="font_change">{description}</h2> */}
       {technologies.map((x) => {
         return (
           <div className="tech">

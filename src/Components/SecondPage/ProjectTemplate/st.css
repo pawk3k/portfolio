@@ -100,4 +100,10 @@ h1 {
   .flex-item{
   width: 75vw;
   }
+  .font_change{
+    font-size: 15px;
+  }
+  h2{
+    font-weight: 1px;
+  }
 }
