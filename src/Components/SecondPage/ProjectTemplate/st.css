@@ -1,9 +1,14 @@
 .template {
   /*background: white;*/
   box-shadow: 1vh 1vh #472987;
-  width: 50vw;
+  width: auto;
   border-radius: 30px;
 }
+/* @media screen and (max-width : 600px){
+  .template{
+  width: 50vw;
+  }
+} */
 
 .img_of_project {
   border-radius: 30px 30px 0 0;
@@ -31,6 +36,7 @@
   font-family: Orbitron, sans-serif;
   border-radius: 30px;
   box-shadow: 0 1vh 1vh #ff00ff;
+  font-size: 1rem;
   width: 6vw;
   height: 6vh;
 }
@@ -43,5 +49,50 @@
 .btn-class:focus {
   outline: none;
 }
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-/*# sourceMappingURL=st.css.map */
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+h1 {
+  padding-left: 0.5em;
+}
+
+.shorthand {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.longhand {
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+}
+
+.longhand li {
+  /* background: deepskyblue; */
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 45vw;
+  height: 45vh;
+  margin: 10px;
+
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
