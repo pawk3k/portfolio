@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import ProjectTemplate from "./ProjectTemplate/ProjectTemplate";
-
+import Descritption from "./ProjectTemplate/Decription";
 import { theme } from "../Themes/maiTheme";
 const Wrapper = styled.div`
   display: flex;
@@ -16,34 +16,13 @@ const Wrapper = styled.div`
   }
 `;
 
-// import { Element } from 'react-scroll';
-// import handleViewport from 'react-in-viewport';
-
 const SecondPage = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const headerRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    console.log(theme.fontSize.m);
-    const header = headerRef.current;
-
-    if (header) {
-      //   [...header.children].map(child => {
-      gsap.from(header, {
-        autoAlpha: 0,
-        x: "+=30",
-        rotation: "360",
-        scrollTrigger: {
-          trigger: header,
-          start: "top bottom-=50px",
-        },
-      });
-      //   });
-    }
-  }, []);
 
   return (
-    <div>
+    <div className="sec">
       <ul className="flex-container longhand">
         <li className="flex-item">
           <ProjectTemplate
@@ -52,7 +31,13 @@ const SecondPage = () => {
             linkLive={"https://pokedex-363a7.web.app"}
           />
         </li>
-        <li className="flex-item">A long long string</li>{" "}
+        <li className="flex-item">
+          <Descritption
+            title="Pokedex"
+            description="Simple app with pokemon stats"
+            technologies={["react", "redux"]}
+          />
+        </li>{" "}
         <li className="flex-item">
           <ProjectTemplate
             image={"nefritis.jpg"}
@@ -60,15 +45,27 @@ const SecondPage = () => {
             linkLive={"https://nefritis2.web.app/"}
           />
         </li>
-        <li className="flex-item">A long long string</li>{" "}
+        <li className="flex-item">
+          <Descritption
+            title="Vintage clothes shop"
+            description="Shop app"
+            technologies={["react", "redux"]}
+          />
+        </li>{" "}
         <li className="flex-item">
           <ProjectTemplate
-            image={"flask.jpg"}
-            linkGH={"https://github.com/pawk3k/app_flask1"}
+            image={"td.jpg"}
+            linkGH={"https://github.com/pawk3k/TD2"}
             linkLive={undefined}
           />
         </li>
-        <li className="flex-item">A long long string</li>{" "}
+        <li className="flex-item">
+          <Descritption
+            title="OpenGL game engine"
+            description="Game engine"
+            technologies={["java", "OpenGL"]}
+          />
+        </li>{" "}
       </ul>
     </div>
   );
