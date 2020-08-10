@@ -16,10 +16,11 @@
 .links {
   border-radius: 0 0 30px 30px;
   display: flex;
+  padding-top: 1.5vh;
   align-items: center;
   justify-content: space-around;
   height: auto;
-  width: 100%;
+  width: auto;
   /* max-width: 50vw; */
   background: #8e42ff;
 }
@@ -33,8 +34,11 @@
   border-radius: 30px;
   box-shadow: 0 1vh 1vh #ff00ff;
   font-size: 1rem;
+  /* margin-bottom: 10px; */
   width: 6vw;
   height: 6vh;
+
+  /* transform: translateY(1vh); */
 }
 
 .btn-class:active {
@@ -97,13 +101,23 @@ h1 {
   font-size: 0.5rem;
 }
 @media screen and (max-width : 700px){
+  .flex-container{
+    justify-content: center;
+  }
   .flex-item{
   width: 75vw;
+  /* padding-left: 10vh; */
   }
   .font_change{
-    font-size: 15px;
+    font-size: 3vh;
   }
   h2{
     font-weight: 1px;
   }
+  .btn-class{
+    width: 10vh;
+  }
+}
+.text-on-botton{
+  position: absolute;
 }

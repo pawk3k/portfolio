@@ -1,8 +1,8 @@
 .main {
   font-family: Share Tech Mono, sans-serif;
   background-color: #472987;
-  height: 135vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
 }
 
 .App-logo {

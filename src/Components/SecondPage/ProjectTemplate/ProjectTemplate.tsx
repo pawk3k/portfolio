@@ -19,11 +19,12 @@ const ProjectTemplate = ({ image, linkGH, linkLive }: Props) => {
         </div>
         <div className="links">
           <a href={linkGH}>
-            <button className="btn-class"> code </button>{" "}
+            <button className="btn-class"> 
+            <div className="text-on-botton">code</div> </button>{" "}
           </a>{" "}
           {linkLive != undefined && (
             <a href={linkLive}>
-              <button className="btn-class"> live </button>{" "}
+              <button className="btn-class"> <div className="text-on-botton">live</div> </button>{" "}
             </a>
           )}{" "}
         </div>{" "}
