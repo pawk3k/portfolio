@@ -10,7 +10,7 @@
   display: -webkit-flex;
   display: flex;
 }
-.longhand { 
+.longhand {
   -webkit-flex-flow: wrap row;
   flex-flow: wrap row;
 }
@@ -26,4 +26,7 @@
   font-weight: bold;
   font-size: 2em;
   text-align: center;
+}
+.container .glowing-effect {
+  text-shadow: -3px -8px 9px #f78aa0;
 }

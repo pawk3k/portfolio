@@ -7,9 +7,9 @@ import Contact from "./Components/Contact/Contact";
 function App() {
   return (
     <div className="App" style={{justifyContent:"center",display:"flex", width:"100vw",height:"100vh",flexWrap:"wrap"}}>
-      <SingleProjectTemplate />
-      <SecondPage/>
-      <ThirdPage/>
+      {/* <SingleProjectTemplate /> */}
+      {/* <SecondPage/> */}
+      {/* <ThirdPage/> */}
       <Contact/>
     </div>
   );
