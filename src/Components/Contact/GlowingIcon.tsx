@@ -1,18 +1,16 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
 export interface GlowingIconProps {
-  classNames?: string;
+  img: string;
 }
 
-const GlowingIcon = ({ classNames }: GlowingIconProps) => {
-
-
-
+const GlowingIcon = ({ img }: GlowingIconProps) => {
   return (
     <div>
-      <i onMouseEnter={()=>{console.log("Kek")}}
-        className="flex-item fab fa-github glowing-effect" aria-hidden="true"
-        // style={{color:"green"}}
+      <img
+        src={require("../res/" + img + ".svg")}
+        className={"grow"}
+        aria-hidden="true"
       />
     </div>
   );

@@ -9,6 +9,11 @@
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: wrap row;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: start;
+  justify-content: space-around;
 }
 .longhand {
   -webkit-flex-flow: wrap row;
@@ -16,17 +21,48 @@
 }
 
 .flex-item {
-  /* background: tomato; */
+  width: 100%;
+  /* display: block; */
+  /* width:0.1vw; */
+  /* height: 0.1vh; */
+  /* height: 100px; */
+  border-radius: 75%;
   /* padding-top: 30vh; */
   /* width:60%; */
   /* height: 100px; */
   /* margin: 20vh; */
   /* line-height: 100px; */
   color: white;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
 }
-.container .glowing-effect {
-  text-shadow: -3px -8px 9px #f78aa0;
+.glowing-effect {
+  width: auto;
+  background: rgba(0, 255, 255, 0.493);
+  border-radius: 75%;
+  box-shadow: 0 0 10vh 4vh #0ff;
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
+  height: auto;
+}
+/* .img {
+  width: 400px;
+  height: 200px;
+  border:2px solid #fff;
+  background: url(img/tiger.png) no-repeat;
+  -moz-box-shadow: inset 10px 10px 50px #fff;
+  -webkit-box-shadow: inset 10px 10px 50px #fff;
+  box-shadow: inset 10px 10px 50px #fff;
+} */
+
+/*  */
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+
+  border-radius: 75%;
+  /* box-shadow: 0 0 10vh 4vh #0ff; */
+  background-color: rgba(0, 255, 255, 0.164);
+  box-shadow: 0 0 5vh 2vh #0ff, 0 0 4vh 5vh #f0f;
+
 }
