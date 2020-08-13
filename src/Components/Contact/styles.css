@@ -66,3 +66,31 @@
   box-shadow: 0 0 5vh 2vh #0ff, 0 0 4vh 5vh #f0f;
 
 }
+@media screen and (max-width : 700px){
+  .flex-container{
+    justify-content: center;
+  }
+  .flex-item{
+  width: 75vw;
+  /* padding-left: 10vh; */
+  }
+  .font_change{
+    font-size: 3vh;
+  }
+  h2{
+    font-weight: 1px;
+  }
+  .btn-class{
+    width: 10vh;
+  }
+}
+.main {
+  font-family: Share Tech Mono, sans-serif;
+  background-color: #472987;
+  color:white;
+  height: auto;
+  width: 100%;
+}
+.border{
+  background-image: linear-gradient(to right, #472987, blue);
+}

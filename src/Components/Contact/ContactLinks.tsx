@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   width: auto;
   display: flex;
   flex-direction: row;
-  align-items: space-around;
+  // align-items: space-around;
 `;
 interface IconProps {
   icon: string;
@@ -32,14 +32,14 @@ const IconLink = styled.a<IconProps>`
     border-radius: 75%;
     /* box-shadow: 0 0 10vh 4vh #0ff; */
     background-color: rgba(0, 255, 255, 0.164);
-    box-shadow: 0 0 5vh 2vh #0ff, 0 0 4vh 5vh #f0f;
+    box-shadow: 0 0 5vh 1vh #0ff, 0 0 4vh 1vh #f0f;
   }
 `;
 const ColWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 30px 0;
+  justify-content: center;
+  // padding: 30px 0;
 `;
 const IconWrapper = styled.div`
   width: 50px;
@@ -52,7 +52,7 @@ const LinkItem = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.white};
   text-decoration: none;
-  margin: 20px 0;
+  // margin: 20px 0;
 `;
 
 const ContactLinks = () => {
@@ -62,21 +62,21 @@ const ContactLinks = () => {
         <LinkItem>
           <IconWrapper>
             <IconLink
-              href="https://github.com/mateusz-pocztowski"
+              href="https://github.com/pawk3k"
               target="_blank"
               rel="noopener noreferrer"
               icon={github}
             />
           </IconWrapper>
           <ColWrapper>
-            <div>LinkedIn</div>
-            <div>Check me on linkedIn</div>
+            <div>Github</div>
+            <div>Check me code</div>
           </ColWrapper>
         </LinkItem>{" "}
         <LinkItem>
           <IconWrapper>
             <IconLink
-              href="https://github.com/mateusz-pocztowski"
+              href="https://www.linkedin.com/in/pavlo-bohdan-ravliv-4a6880158/"
               target="_blank"
               rel="noopener noreferrer"
               icon={linkedin}
@@ -90,15 +90,15 @@ const ContactLinks = () => {
         <LinkItem>
           <IconWrapper>
             <IconLink
-              href="https://github.com/mateusz-pocztowski"
+              href="mailto:ravliv.pavlobohdan@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               icon={mail}
             />
           </IconWrapper>
           <ColWrapper>
-            <div>LinkedIn</div>
-            <div>Check me on linkedIn</div>
+            <div>Email</div>
+            <div>Write an email</div>
           </ColWrapper>
         </LinkItem>{" "}
       </ColWrapper>

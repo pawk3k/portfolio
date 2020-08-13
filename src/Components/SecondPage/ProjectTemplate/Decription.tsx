@@ -18,7 +18,7 @@ const Description = ({ title, description, technologies }: Props) => {
           <div className="tech">
             <img
               style={{ width: "2vw", height: "2vh" }}
-              src={require("../../res" +  x  + ".svg")}
+              src={require("../../res/" +  x  + ".svg")}
             />
             {x}
           </div>
