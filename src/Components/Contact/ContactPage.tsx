@@ -18,15 +18,18 @@ const ContactPage = () => {
   return (
     <div className="main">
       <div className="container">
-        <div           style={{
+        <div
+          style={{
             fontSize: "15vh",
             textDecoration: "underline",
             marginBottom: "5vh",
             color: "wheat",
-          }}>Contact</div>
+          }}
+        >
+          Contact
+        </div>
         <Wrapper>
           <ContactLinks />
-          {/* <ContactForm /> */}
         </Wrapper>
       </div>
     </div>

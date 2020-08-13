@@ -12,7 +12,6 @@ const Description = ({ title, description, technologies }: Props) => {
   return (
     <div className="font_change">
       <h1 className="font_change">{title}</h1>
-      {/* <h2 className="font_change">{description}</h2> */}
       {technologies.map((x) => {
         return (
           <div className="tech">

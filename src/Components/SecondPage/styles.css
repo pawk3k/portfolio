@@ -6,7 +6,6 @@
   width:  100%;
   height: auto;
   padding-bottom: 25vh;
-  /*display: flex;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(to bottom, #15001F, #472987);
@@ -44,12 +43,10 @@
 }
 
 .flex-item {
-  /* background: tomato; */
   padding-top: 30vh;
   width:60%;
   height: 100px;
   margin: 20vh;
-  /* line-height: 100px; */
   color: white;
   font-weight: bold;
   font-size: 2em;
