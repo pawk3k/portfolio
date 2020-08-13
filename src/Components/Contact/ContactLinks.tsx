@@ -49,7 +49,8 @@ const IconWrapper = styled.div`
 const LinkItem = styled.div`
   margin: 5px 0;
   display: flex;
-  align-items: center;
+  // align-items: center;
+  // justify-content: center;
   color: ${({ theme }) => theme.white};
   text-decoration: none;
   // margin: 20px 0;
@@ -84,7 +85,7 @@ const ContactLinks = () => {
           </IconWrapper>
           <ColWrapper>
             <div>LinkedIn</div>
-            <div>Check me on linkedIn</div>
+            <div>Check my profile</div>
           </ColWrapper>
         </LinkItem>{" "}
         <LinkItem>
