@@ -55,7 +55,12 @@ const LinkItem = styled.div`
   text-decoration: none;
   // margin: 20px 0;
 `;
+const Linkheader = styled.div`
+  font-size:4vh;
+  font-weight:bold;
+  color:#0ff;
 
+`;
 const ContactLinks = () => {
   return (
     <Wrapper>
@@ -70,7 +75,7 @@ const ContactLinks = () => {
             />
           </IconWrapper>
           <ColWrapper>
-            <div>Github</div>
+            <Linkheader>Github</Linkheader>
             <div>Check me code</div>
           </ColWrapper>
         </LinkItem>{" "}
@@ -84,7 +89,7 @@ const ContactLinks = () => {
             />
           </IconWrapper>
           <ColWrapper>
-            <div>LinkedIn</div>
+            <Linkheader>LinkedIn</Linkheader>
             <div>Check my profile</div>
           </ColWrapper>
         </LinkItem>{" "}
@@ -98,7 +103,7 @@ const ContactLinks = () => {
             />
           </IconWrapper>
           <ColWrapper>
-            <div>Email</div>
+            <Linkheader>Email</Linkheader>
             <div>Write an email</div>
           </ColWrapper>
         </LinkItem>{" "}
