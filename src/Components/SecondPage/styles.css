@@ -19,7 +19,7 @@
 }
 
 .projects-text {
-  color: #472987;
+  /* color: #472987; */
   text-shadow: 1vh 1vh #61dafb;
   font-size: 5vw;
   font-family: Orbitron, sans-serif;
@@ -41,7 +41,10 @@
   -webkit-flex-flow: wrap row;
   flex-flow: wrap row;
 }
+.container{
 
+  /* background-image: linear-gradient(to right, #472987, blue); */
+}
 .flex-item {
   padding-top: 30vh;
   width:60%;

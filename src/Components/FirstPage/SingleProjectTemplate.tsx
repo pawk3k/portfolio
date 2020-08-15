@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+import React, { useState,useRef,useEffect } from "react";
 import "./Styles.css";
 import Typist from "react-typist";
+import gsap from "gsap";
+import styled from "styled-components";
 import TextField from "@material-ui/core/TextField";
-
+const RowWrapper = styled.div`
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+const ColWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  //   padding: 10vh 0;
+`;
 const SingleProjectTemplate = () => {
   const [rounded, set] = useState(false);
   const mouseE = () => {
@@ -15,6 +29,22 @@ const SingleProjectTemplate = () => {
     hideWhenDone: false,
     hideWhenDoneDelay: 1000,
   };
+
+    const iconRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+
+    const header = iconRef.current;
+
+    gsap.to(iconRef.current, {
+      y: "+=50",
+      repeat:-1,
+      repeatDelay:1,
+      // scrollTrigger: {
+      //   trigger: iconRef.current,
+      //   start: "top bottom-=50px",
+      // },
+    });
+  }, []);
   return (
     <div>
       <div
@@ -29,9 +59,12 @@ const SingleProjectTemplate = () => {
           height: "100vh",
         }}
       >
-        <div className="neon-text">
-          <Typist cursor={cursor1}>Portfolio</Typist>
-        </div>
+        <ColWrapper>
+          <div className="neon-text">
+            <Typist cursor={cursor1}>Portfolio</Typist>
+          </div>
+          <i ref={iconRef} className="fas fa-angle-down"></i>
+        </ColWrapper>
       </div>
     </div>
   );

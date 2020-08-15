@@ -23,50 +23,50 @@ const SecondPage = () => {
 
   return (
     <div className="sec">
-      <ul className="flex-container longhand">
-        <li className="flex-item">
+      <div>
+        <div className="flex-item">
           <ProjectTemplate
             image={"pokedex.jpg"}
             linkGH={"https://github.com/pawk3k/pokedex"}
             linkLive={"https://pokedex-363a7.web.app"}
           />
-        </li>
-        <li className="flex-item">
+        </div>
+        <div className="flex-item">
           <Descritption
             title="Pokedex"
             description="Simple app with pokemon stats"
             technologies={["react", "redux"]}
           />
-        </li>{" "}
-        <li className="flex-item">
+        </div>{" "}
+        <div className="flex-item">
           <ProjectTemplate
             image={"nefritis.jpg"}
             linkGH={"https://github.com/pawk3k/oksana"}
             linkLive={"https://nefritis2.web.app/"}
           />
-        </li>
-        <li className="flex-item">
+        </div>
+        <div className="flex-item">
           <Descritption
             title="Vintage clothes shop"
             description="Shop app"
             technologies={["react", "redux"]}
           />
-        </li>{" "}
-        <li className="flex-item">
+        </div>{" "}
+        <div className="flex-item">
           <ProjectTemplate
             image={"td.jpg"}
             linkGH={"https://github.com/pawk3k/TD2"}
             linkLive={undefined}
           />
-        </li>
-        <li className="flex-item">
+        </div>
+        <div className="flex-item">
           <Descritption
             title="OpenGL game engine"
             description="Game engine"
             technologies={["java", "OpenGL"]}
           />
-        </li>{" "}
-      </ul>
+        </div>{" "}
+      </div>
     </div>
   );
 };
