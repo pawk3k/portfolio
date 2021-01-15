@@ -1,5 +1,4 @@
 import React from "react";
-import GlowingIcon from "./GlowingIcon";
 import styled from "styled-components";
 import linkedin from "../res/linkedin.svg";
 import github from "../res/github.svg";

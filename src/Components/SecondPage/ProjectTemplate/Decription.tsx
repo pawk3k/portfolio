@@ -14,7 +14,7 @@ const Description = ({ title, description, technologies }: Props) => {
       <h1 className="font_change">{title}</h1>
       {technologies.map((x) => {
         return (
-          <div className="tech">
+          <div key={x} className="tech">
             <img
               style={{ width: "2vw", height: "2vh" }}
               src={require("../../res/" +  x  + ".svg")}

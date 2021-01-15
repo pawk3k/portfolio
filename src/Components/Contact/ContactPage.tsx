@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ContactLinks from "./ContactLinks";
-import ContactForm from "./ContactForm";
 const Wrapper = styled.div`
   width: auto;
   display: flex;
