@@ -1,6 +1,6 @@
 import React from "react";
 import "./st.css";
-import ButtonPannel from "./ButtonPannel";
+import ButtonPannel from "./ButtonPannel";    
 interface Props {
   image: string;
   linkGH: string;
@@ -17,24 +17,8 @@ const ProjectTemplate = ({ image, linkGH, linkLive }: Props) => {
             style={{ objectFit: "contain", width: "90%", height: "90%" }}
           />{" "}
         </div>
-        <ButtonPannel linkGH={linkGH} linkLive={linkLive} />
-
-        {/* <div className="links">
-          <a href={linkGH}>
-            <button className="btn-class">
-              <div className="text-on-botton">code</div>{" "}
-            </button>{" "}
-          </a>{" "}
-          {linkLive != undefined && (
-            <a href={linkLive}>
-              <button className="btn-class">
-                {" "}
-                <div className="text-on-botton">live</div>{" "}
-              </button>{" "}
-            </a>
-          )}{" "}
-        </div>{" "} */}
-      </div>{" "}
+        <ButtonPannel />
+      </div>
     </div>
   );
 };

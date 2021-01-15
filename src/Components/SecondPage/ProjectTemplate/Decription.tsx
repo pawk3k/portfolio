@@ -1,7 +1,5 @@
-// import React from "../../../res/git.svg";
 import "./st.css";
 import React from "react";
-// import from git.svg from "../"
 interface Props {
   title: string;
   description: string;
